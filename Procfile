@@ -1,1 +1,1 @@
-web: gunicorn api-fstr.wsgi --log-file -
+web: gunicorn python_getting_started.wsgi --log-file -
