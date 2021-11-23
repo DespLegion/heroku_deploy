@@ -1,1 +1,1 @@
-web: unicorn api-fstr.wsgi --log-file -
+web: gunicorn api-fstr.wsgi --log-file -
