@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+        <meta charset="UTF-8">
+        <title>Главная страница</title>
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+    </head>
+    <body>
+    <h1>Тестовая страница API портала</h1>
+    {% if api_list %}
+        {% for api in api_list %}
+            {{api.name}}
+        {% endfor %}
+    {% else %}
+        <h2>Действующих методов API не найдено</h2>
+    {% endif %}
+    </body>
+</html>
