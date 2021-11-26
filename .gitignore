@@ -3,3 +3,6 @@ venv
 staticfiles
 .env
 getting-started/*
+.idea/
+myvenv/
+db.sqlite3
