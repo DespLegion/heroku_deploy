@@ -5,4 +5,5 @@ staticfiles
 getting-started/*
 .idea/
 myvenv/
+api_list/migrations/
 db.sqlite3

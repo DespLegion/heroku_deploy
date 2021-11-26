@@ -8,5 +8,5 @@ from .models import ApiList
 class ApiListView(View):
     """Вывод списка API"""
     def get(self, request):
-        apis = ApiList.objects.all()
+        apis = ApiList.objects.filter(activ=True)
         return render(request, 'api_list/main_page.html', {'api_list': apis})

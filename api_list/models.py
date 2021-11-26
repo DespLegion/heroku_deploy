@@ -18,6 +18,7 @@ class ApiList(models.Model):
     api_url = models.CharField('Ссылка для запроса API', max_length=100)
     add_date = models.DateField('Дата добавления метода', default=date.today)
     request_type = models.CharField(max_length=10, choices=requests_list)
+    activ = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
